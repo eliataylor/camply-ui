@@ -9,7 +9,7 @@ Following a 4-step process:
 4. If any 1 campsite is available, email HTML in notification
 """
 
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 from typing import List, Dict, Union
 from collections import defaultdict
@@ -25,7 +25,7 @@ from dotenv import load_dotenv
 
 from camply.containers import AvailableCampsite, SearchWindow
 from camply.search import SearchRecreationDotGov, SearchReserveCalifornia
-from generate_index import generate_index_html
+from favorites.generate_index import generate_index_html
 
 # Recreation areas we want to search, organized by provider
 REC_AREAS = {
@@ -66,6 +66,12 @@ def get_search_window(start_date: str, end_date: str) -> SearchWindow:
         start_date=datetime.strptime(start_date, "%Y-%m-%d"),
         end_date=datetime.strptime(end_date, "%Y-%m-%d")
     )
+
+def get_default_dates():
+    """Get default start and end dates (today + 7 days)."""
+    start_date = datetime.now()
+    end_date = start_date + timedelta(days=7)
+    return start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d")
 
 def build_results_summary(matches: List[AvailableCampsite], rec_area_name: str, provider_name: str, rec_area_id: str) -> Dict:
     """
@@ -270,10 +276,16 @@ def send_email(html_content: str, subject: str) -> None:
     logger.info(f"Sent email notification to {to_addr}")
 
 def main():
+    """Main function."""
     parser = argparse.ArgumentParser(description="Search for available campsites in multiple recreation areas")
-    parser.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format")
-    parser.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format")
+    parser.add_argument("--start-date", help="Start date in YYYY-MM-DD format")
+    parser.add_argument("--end-date", help="End date in YYYY-MM-DD format")
     args = parser.parse_args()
+
+    # Use provided dates or defaults
+    if not args.start_date or not args.end_date:
+        args.start_date, args.end_date = get_default_dates()
+        logger.info(f"Using default date range: {args.start_date} to {args.end_date}")
 
     search_window = get_search_window(args.start_date, args.end_date)
     all_summaries = []

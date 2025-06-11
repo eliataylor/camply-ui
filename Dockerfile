@@ -18,8 +18,14 @@ RUN pip install -e .
 
 # Create directory for custom code
 WORKDIR /app/custom
-COPY requirements-custom.txt .
-RUN pip install -r requirements-custom.txt
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# Copy your package
+COPY . /app/custom/
+
+# Install your package in editable mode
+RUN pip install -e .
 
 # Create necessary directories
 RUN mkdir -p /app/custom/logs /app/custom/output
@@ -31,4 +37,4 @@ ENV PYTHONPATH=/app/custom:/app/camply:$PYTHONPATH
 WORKDIR /app/custom
 
 # Default command (can be overridden)
-CMD ["python", "-m", "favorites.californias-best"]
+CMD ["python", "-m", "favorites.californias_best"]
