@@ -1,0 +1,115 @@
+# Camply configuration for weekend camping alerts
+# Run with: camply campsites --yaml-config weekend-alerts.yaml
+
+# Search parameters
+campgrounds:
+  - 233346  # ACKERMAN CAMPGROUND
+  - 233345  # ALPINE VIEW CAMPGROUND
+  - 231958  # ARROYO SECO
+  - 10315018  # AhDiNa Campground
+  - 232753  # Antlers (Shasta Lake, CA)
+  - 232760  # BAILEY COVE
+  - 272229  # BICENTENNIAL CAMPGROUND
+  - 233431  # BOAT-IN SITES (LAKE SONOMA)
+  - 249982  # BUCKEYE FLAT CAMPGROUND
+  - 232363  # BUSHYTAIL
+  - 10157490  # Beehive Dispersed Area (CA)
+  - 232260  # Big Meadow - US Forest Service Stanislaus National Forest (CA)
+  - 256932  # Big Meadow Campground - US Forest Service Sequoia National Forest (CA)
+  - 10157533  # Bridge Camp (CA)
+  - 233256  # CAMP 4 GROUP CAMPGROUND
+  - 233981  # CAPPS CROSSING
+  - 273878  # CHINA CAMP CAMPGROUND
+  - 234311  # CONVICT LAKE CAMPGROUND
+  - 273379  # COOPER GULCH CAMPGROUND
+  - 233754  # COYOTE POINT
+  - 10315038  # Cattle Camp Campground (CA)
+  - 232813  # DEER CREEK
+  - 232754  # DEKKAS ROCK
+  - 233772  # DIMOND O
+  - 232761  # ELLERY CREEK
+  - 273869  # ESCONDIDO CAMPGROUND
+  - 232361  # FAWN
+  - 255119  # FOWLERS CAMPGROUND
+  - 10157230  # Gregory Beach Dispersed Area (CA)
+  - 232234  # HAYWARD FLAT
+  - 232762  # HIRZ BAY
+  - 233096  # HIRZ BAY GROUP 1
+  - 233097  # HIRZ BAY GROUP 2
+  - 234592  # INDIAN SPRINGS
+  - 10157273  # Jones Valley Inlet Dispersed Area (CA)
+  - 10157316  # Jones Valley Inlet West Dispersed Area (CA)
+  - 232491  # KIRBY COVE CAMPGROUND
+  - 233116  # KIRK CREEK CAMPGROUND
+  - 233532  # KYEN CAMPGROUND AND OAK GROVE DAY USE AREA
+  - 232758  # LAKESHORE EAST
+  - 251445  # LITTLE BEAVER A CAMPGROUND
+  - 232906  # LOWER BILLY CREEK
+  - 10157359  # Lower Jones Valley (CA)
+  - 233344  # MARY SMITH CAMPGROUND
+  - 10145702  # MCCLOUD BRIDGE
+  - 273874  # MEMORIAL CAMPGROUND
+  - 233347  # MINERSVILLE CAMPGROUND
+  - 232763  # MOORE CREEK
+  - 10315058  # McBride Springs Campground (CA)
+  - 10220612  # Meeks Bay Resort
+  - 232764  # NELSON POINT
+  - 272248  # PELTIER BRIDGE PRIMITIVE CAMPGROUND
+  - 234015  # PINNACLES CAMPGROUND
+  - 232262  # PIPI CAMPGROUND
+  - 231959  # PLASKETT CREEK CAMPGROUND
+  - 233118  # PONDEROSA CAMPGROUND
+  - 232765  # Pine Point (Shasta Lake, CA)
+  - 233359  # Point Reyes National Seashore Campground
+  - 10157382  # Preacher Meadow (CA)
+  - 234549  # ROCKY REST
+  - 10172170  # Rob Hill Group Campground
+  - 234545  # SIERRA
+  - 234111  # SOUTH SHORE CAMPGROUND
+  - 232362  # STONEY GROUP SHASTA-TRINITY
+  - 232107  # STUMPY MEADOWS
+  - 10157438  # Salt Creek Dispersed Area (CA)
+  - 10315073  # Sims Flat Campground (CA)
+  - 232235  # TANNERY
+  - 273819  # WHITE OAKS CAMPGROUND
+  - 234544  # WILD PLUM
+
+# Date range - next few days
+start_date: "2025-06-13"  # Tomorrow
+end_date: "2025-10-05"    # Weekend period
+
+# Weekend nights only (Friday, Saturday, Sunday)
+search_settings:
+  search_days:
+  - Friday
+  - Saturday
+  equipment:
+  - tent
+
+# Minimum 1 night stay
+nights: 2
+
+# Notification settings
+# notifications:
+#  - service: pushover
+#    push_to_all_devices: true
+  # Add other notification services as needed:
+  # - service: email
+  # - service: slack
+  # - service: telegram
+
+# Search frequency (check every 5 minutes)
+search-forever: true
+search-once: false
+delay: 300  # 5 minutes in seconds
+
+# Polling settings
+polling-interval: 300  # 5 minutes
+continuous: true
+
+# Additional filters
+accessible-only: false  # Set to true if you need accessible sites only
+
+# Logging
+verbose: true
+debug: true

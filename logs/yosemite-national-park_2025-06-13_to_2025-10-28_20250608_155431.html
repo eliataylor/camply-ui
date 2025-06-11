@@ -1,0 +1,1464 @@
+<!-- Report regenerated at: 2025-06-08T23:18:10 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campsite Availability Report</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .date-badge {
+            margin: 2px;
+            font-size: 0.9em;
+        }
+        .campsite-card {
+            margin-bottom: 10px;
+        }
+        .first-available {
+            font-weight: bold;
+            color: #198754;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .select2-container {
+            min-width: 300px;
+        }
+        .collapse-controls {
+            margin-bottom: 1rem;
+        }
+        .rec-area-card {
+            scroll-margin-top: 80px;
+        }
+        .map-thumbnail {
+            cursor: pointer;
+        }
+        .modal-map {
+            width: 100%;
+        }
+        .amenity-filters {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .amenity-group {
+            margin-bottom: 10px;
+        }
+        .hidden-campsite {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Embed full data structure -->
+    <script type="text/javascript">
+        window.campsiteData = JSON.parse('[{"all_amenities": {"Base Number of People": ["1"], "Base Number of Vehicles": ["0"], "Campfire Allowed": ["Yes"], "Capacity Rating": ["Single"], "Capacity/Size Rating": ["Single"], "Checkin Time": ["12:00 PM"], "Checkout Time": ["12:00 PM"], "Fire Pit": ["Y"], "Food Locker": ["Y"], "Hike In Distance to Site": ["107", "144", "75"], "Is Equipment Mandatory": ["true"], "Map X Coordinate": ["201.86", "294.02", "561.28", "684.84326171875"], "Map Y Coordinate": ["765.42", "782.31", "800.74", "888.662231445313"], "Max Num of People": ["30", "6"], "Max Num of Vehicles": ["2", "5"], "Min Num of People": ["13"], "Pets Allowed": ["Yes"], "Picnic Table": ["Y"], "Placed on Map": ["1"], "Shade": ["Yes"], "Site Access": ["Hike-In"], "Tent Pad Length": ["15"], "Tent Pad Width": ["8"]}, "available_sites": {"Hodgdon Meadow Campground": {"campsites": {"022: HIKE-IN": {"amenities": {"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "107", "Is Equipment Mandatory": "true", "Map X Coordinate": "201.86", "Map Y Coordinate": "782.31", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In"}, "booking_url": "https://www.recreation.gov/camping/campsites/1017", "dates": ["2025-07-19"], "location": {"latitude": 37.79755171, "longitude": -119.8673819}}, "024: HIKE-IN": {"amenities": {"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "75", "Is Equipment Mandatory": "true", "Map X Coordinate": "294.02", "Map Y Coordinate": "765.42", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In", "Tent Pad Length": "15", "Tent Pad Width": "8"}, "booking_url": "https://www.recreation.gov/camping/campsites/989", "dates": ["2025-09-05"], "location": {"latitude": 37.79759885, "longitude": -119.8669505}}, "037: HIKE-IN": {"amenities": {"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "144", "Is Equipment Mandatory": "true", "Map X Coordinate": "561.28", "Map Y Coordinate": "800.74", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Site Access": "Hike-In"}, "booking_url": "https://www.recreation.gov/camping/campsites/1075", "dates": ["2025-09-05"], "location": {"latitude": 37.79763894, "longitude": -119.8655354}}, "Group A": {"amenities": {"Base Number of People": "1", "Base Number of Vehicles": "0", "Campfire Allowed": "Yes", "Capacity/Size Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Fire Pit": "Y", "Food Locker": "Y", "Is Equipment Mandatory": "true", "Map X Coordinate": "684.84326171875", "Map Y Coordinate": "888.662231445313", "Max Num of People": "30", "Max Num of Vehicles": "5", "Min Num of People": "13", "Picnic Table": "Y", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In"}, "booking_url": "https://www.recreation.gov/camping/campsites/982", "dates": ["2025-06-27"], "location": {"latitude": 37.79707094, "longitude": -119.865027}}}, "location": {"latitude": 37.79763894, "longitude": -119.8655354}}}, "date_counts": {"2025-06-27": 1, "2025-07-19": 1, "2025-09-05": 2}, "rec_area_name": "Yosemite National Park", "runtime": "2025-06-08T15:54:31", "total_sites": 4}]');
+        window.ignoredFilters = ['Map X Coordinate', 'Map Y Coordinate', 'Flood Locker', 'Min Num of People', 'Max Num of People', 'Min Num of Vehicles', 'Max Num of Vehicles', 'Max Vehicle Length', 'Driveway Length', 'Driveway Entry', 'Driveway Surface', 'Site Width', 'Site Length',  'Checkin Time', 'Checkout Time', 'Placed on Map' ];
+    </script>
+
+    <!-- Navigation App Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-nav mb-4">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <select class="form-select me-2" id="locationJump">
+                    <option value="">Jump to location...</option>
+                    
+                    
+                    <optgroup label="Yosemite National Park">
+                        <option value="rec-area-yosemite-national-park">Yosemite National Park (Overview)</option>
+                        
+                        
+                        <option value="campground-yosemite-national-park-hodgdon-meadow-campground">
+                            &nbsp;&nbsp;📍 Hodgdon Meadow Campground
+                        </option>
+                        
+                    </optgroup>
+                    
+                </select>
+                <span class="navbar-text ms-2">
+                    2025-06-27 to 2025-09-05
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        
+        
+        
+
+        <div class="card mb-4 rec-area-card" id="rec-area-yosemite-national-park">
+            <div class="card-header bg-primary text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">Yosemite National Park</h3>
+                    <p>Total Available Sites: <span class="total-sites">4</span> 
+                       <small class="text-muted" id="filtered-count" style="display: none">(Filtered: <span class="filtered-total">0</span>)</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="rec-area mb-4" id="rec-area-yosemite-national-park">
+                    <h2>Yosemite National Park</h2>
+
+                    <!-- Date summary section -->
+                    <div class="mb-4">
+                        <h4>Availability by Date</h4>
+                        <div class="date-summary">
+                            
+                            <span class="badge bg-success date-badge">
+                                2025-09-05: <small>2 sites</small>
+                            </span>
+                            
+                            <span class="badge bg-success date-badge">
+                                2025-07-19: <small>1 sites</small>
+                            </span>
+                            
+                            <span class="badge bg-success date-badge">
+                                2025-06-27: <small>1 sites</small>
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!-- Amenity filters -->
+                    <div class="amenity-filters">
+                        <h4>Filter by Amenities</h4>
+                        
+                        <!-- Keyword Search -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="keyword-search-yosemite-national-park">Search Amenities</label>
+                                    <input type="text" 
+                                           class="form-control amenity-keyword-search" 
+                                           id="keyword-search-yosemite-national-park"
+                                           data-rec-area="yosemite-national-park"
+                                           placeholder="Search by amenity description...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boolean Filters -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h5>Quick Filters</h5>
+                            </div>
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Pets Allowed" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Pets_Allowed
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Pets_Allowed
+">
+                                                Pets Allowed
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Capacity Rating" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Capacity_Rating
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Capacity_Rating
+">
+                                                Capacity Rating
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Hike In Distance to Site" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Hike_In_Distance_to_Site
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Hike_In_Distance_to_Site
+">
+                                                Hike In Distance to Site
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Site Access" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Site_Access
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Site_Access
+">
+                                                Site Access
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Campfire Allowed" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Campfire_Allowed
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Campfire_Allowed
+">
+                                                Campfire Allowed
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Is Equipment Mandatory" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Is_Equipment_Mandatory
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Is_Equipment_Mandatory
+">
+                                                Is Equipment Mandatory
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Placed on Map" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Placed_on_Map
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Placed_on_Map
+">
+                                                Placed on Map
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Shade" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Shade
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Shade
+">
+                                                Shade
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Capacity/Size Rating" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Capacity_Size_Rating
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Capacity_Size_Rating
+">
+                                                Capacity/Size Rating
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Food Locker" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Food_Locker
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Food_Locker
+">
+                                                Food Locker
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Base Number of People" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Base_Number_of_People
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Base_Number_of_People
+">
+                                                Base Number of People
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Picnic Table" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Picnic_Table
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Picnic_Table
+">
+                                                Picnic Table
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Fire Pit" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Fire_Pit
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Fire_Pit
+">
+                                                Fire Pit
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Base Number of Vehicles" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Base_Number_of_Vehicles
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Base_Number_of_Vehicles
+">
+                                                Base Number of Vehicles
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Tent Pad Width" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Tent_Pad_Width
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Tent_Pad_Width
+">
+                                                Tent Pad Width
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                        
+                                        
+                                            
+                                        
+                                    
+                                    
+
+                                    
+
+                                    
+                                    <div class="col-md-3 amenity-group boolean-filter" >
+                                        <div class="form-check">
+                                            <input class="form-check-input amenity-checkbox" type="checkbox" 
+                                                   value="Tent Pad Length" 
+                                                   data-rec-area="yosemite-national-park"
+                                                   data-filter-type="boolean"
+                                                   id="amenity-yosemite-national-park-
+Tent_Pad_Length
+">
+                                            <label class="form-check-label" for="amenity-yosemite-national-park-
+Tent_Pad_Length
+">
+                                                Tent Pad Length
+                                                <span class="badge bg-secondary ms-1 amenity-count">0</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                        </div>
+                    </div>
+
+                    <!-- Rec Area Collapse Controls -->
+                    <div class="collapse-controls mb-3">
+                        <button class="btn btn-outline-primary btn-sm toggle-rec-area" 
+                                data-rec-area="yosemite-national-park">
+                            Toggle All Campgrounds
+                        </button>
+                    </div>
+
+                    <!-- Campgrounds -->
+                    
+                    
+                    <div class="campground mb-4" 
+                         id="campground-yosemite-national-park-hodgdon-meadow-campground"
+                         data-rec-area="yosemite-national-park" 
+                         data-campground="Hodgdon Meadow Campground">
+                        
+                        <div class="campground-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                                <div class="ml-2">
+                                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=37.79763894,-119.8655354&zoom=14&size=120x60&maptype=hybrid&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                         class="map-thumbnail"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#mapModal-yosemite-national-park-hodgdon-meadow-campground"
+                                         alt="Campground map">
+                                </div>
+                                
+                                <!-- Campground Map Modal -->
+                                <div class="modal fade" id="mapModal-yosemite-national-park-hodgdon-meadow-campground" tabindex="-1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Hodgdon Meadow Campground Location</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Broader area view -->
+                                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=37.79763894,-119.8655354&zoom=14&size=800x400&maptype=roadmap&markers=color:red%7C37.79763894,-119.8655354&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                                     class="modal-map mb-3"
+                                                     alt="Campground location (broader area)">
+                                                <!-- Detailed satellite view -->
+                                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=37.79763894,-119.8655354&zoom=16&size=800x400&maptype=hybrid&markers=color:red%7C37.79763894,-119.8655354&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                                     class="modal-map"
+                                                     alt="Campground location (detailed view)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <h3>Hodgdon Meadow Campground</h3>
+                                <div class="campground-controls">
+                                    <button class="btn btn-outline-secondary btn-sm toggle-sites" 
+                                            data-campground="yosemite-national-park-hodgdon-meadow-campground">
+                                        Toggle All Sites
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Campsites -->
+                        <div class="campsites">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Campsite <small>(4 sites)</small></th>
+                                        
+                                        
+                                        
+                                            
+                                            
+                                                
+                                                    
+                                                
+                                            
+                                        
+                                            
+                                            
+                                                
+                                                    
+                                                
+                                            
+                                        
+                                            
+                                            
+                                                
+                                                    
+                                                
+                                            
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <th>Available Dates <small>(3 unique dates, 0 total slots)</small></th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr class="campsite-row" 
+                                        data-amenities='{"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "144", "Is Equipment Mandatory": "true", "Map X Coordinate": "561.28", "Map Y Coordinate": "800.74", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Site Access": "Hike-In"}' 
+                                        data-rec-area="yosemite-national-park"
+                                        data-campground="hodgdon-meadow-campground"
+                                        data-campsite="037: HIKE-IN">
+                                        <td>
+                                            037: HIKE-IN
+                                            
+                                            <div class="text-muted small">
+                                                <strong>Amenities:</strong>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                Pets Allowed, Capacity Rating, Hike In Distance to Site, Site Access, Campfire Allowed, Is Equipment Mandatory, Placed on Map
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            <span class="badge bg-info date-badge">2025-09-05</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="https://www.recreation.gov/camping/campsites/1075" target="_blank" class="btn btn-success btn-sm">Book Now</a>
+                                                
+                                                <a href="https://www.google.com/maps?q=37.79763894,-119.8655354" 
+                                                   target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr class="campsite-row" 
+                                        data-amenities='{"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "107", "Is Equipment Mandatory": "true", "Map X Coordinate": "201.86", "Map Y Coordinate": "782.31", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In"}' 
+                                        data-rec-area="yosemite-national-park"
+                                        data-campground="hodgdon-meadow-campground"
+                                        data-campsite="022: HIKE-IN">
+                                        <td>
+                                            022: HIKE-IN
+                                            
+                                            <div class="text-muted small">
+                                                <strong>Amenities:</strong>
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                Capacity Rating, Site Access, Campfire Allowed, Pets Allowed, Shade, Hike In Distance to Site, Is Equipment Mandatory, Placed on Map
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            <span class="badge bg-info date-badge">2025-07-19</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="https://www.recreation.gov/camping/campsites/1017" target="_blank" class="btn btn-success btn-sm">Book Now</a>
+                                                
+                                                <a href="https://www.google.com/maps?q=37.79755171,-119.8673819" 
+                                                   target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr class="campsite-row" 
+                                        data-amenities='{"Base Number of People": "1", "Base Number of Vehicles": "0", "Campfire Allowed": "Yes", "Capacity/Size Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Fire Pit": "Y", "Food Locker": "Y", "Is Equipment Mandatory": "true", "Map X Coordinate": "684.84326171875", "Map Y Coordinate": "888.662231445313", "Max Num of People": "30", "Max Num of Vehicles": "5", "Min Num of People": "13", "Picnic Table": "Y", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In"}' 
+                                        data-rec-area="yosemite-national-park"
+                                        data-campground="hodgdon-meadow-campground"
+                                        data-campsite="Group A">
+                                        <td>
+                                            Group A
+                                            
+                                            <div class="text-muted small">
+                                                <strong>Amenities:</strong>
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                Site Access, Campfire Allowed, Shade, Capacity/Size Rating, Is Equipment Mandatory, Food Locker, Base Number of People, Picnic Table, Fire Pit, Placed on Map, Base Number of Vehicles
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            <span class="badge bg-info date-badge">2025-06-27</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="https://www.recreation.gov/camping/campsites/982" target="_blank" class="btn btn-success btn-sm">Book Now</a>
+                                                
+                                                <a href="https://www.google.com/maps?q=37.79707094,-119.865027" 
+                                                   target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr class="campsite-row" 
+                                        data-amenities='{"Campfire Allowed": "Yes", "Capacity Rating": "Single", "Checkin Time": "12:00 PM", "Checkout Time": "12:00 PM", "Hike In Distance to Site": "75", "Is Equipment Mandatory": "true", "Map X Coordinate": "294.02", "Map Y Coordinate": "765.42", "Max Num of People": "6", "Max Num of Vehicles": "2", "Pets Allowed": "Yes", "Placed on Map": "1", "Shade": "Yes", "Site Access": "Hike-In", "Tent Pad Length": "15", "Tent Pad Width": "8"}' 
+                                        data-rec-area="yosemite-national-park"
+                                        data-campground="hodgdon-meadow-campground"
+                                        data-campsite="024: HIKE-IN">
+                                        <td>
+                                            024: HIKE-IN
+                                            
+                                            <div class="text-muted small">
+                                                <strong>Amenities:</strong>
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                
+                                                        
+                                                    
+                                                
+                                                
+                                                
+                                                Pets Allowed, Site Access, Shade, Hike In Distance to Site, Capacity Rating, Campfire Allowed, Tent Pad Width, Tent Pad Length, Is Equipment Mandatory, Placed on Map
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            <span class="badge bg-info date-badge">2025-09-05</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="https://www.recreation.gov/camping/campsites/989" target="_blank" class="btn btn-success btn-sm">Book Now</a>
+                                                
+                                                <a href="https://www.google.com/maps?q=37.79759885,-119.8669505" 
+                                                   target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Initialize Select2 for location jumping
+            $('#locationJump').select2({
+                theme: 'bootstrap-5',
+                placeholder: 'Jump to location...',
+                allowClear: true
+            }).on('change', function() {
+                const targetId = $(this).val();
+                if (targetId) {
+                    const element = document.getElementById(targetId);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.log('No element found for target ID:', targetId);
+                    }
+                } else {
+                    console.log('No target ID found');
+                }
+            });
+
+            // Initialize DataTables for all campsite tables
+            $('.campsite-table').each(function() {
+                $(this).DataTable({
+                    order: [[1, 'asc']], // Sort by first available date by default
+                    pageLength: 25,
+                    language: {
+                        search: "Filter sites: "
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize amenity filtering
+            const amenityCheckboxes = document.querySelectorAll('.amenity-checkbox');
+            const keywordSearches = document.querySelectorAll('.amenity-keyword-search');
+            const campsiteRows = document.querySelectorAll('.campsite-row');
+            
+            // Initialize filtersByArea in the window scope
+            window.filtersByArea = {};
+            
+            // Function to sanitize amenity names for use in selectors
+            function sanitizeAmenityName(name) {
+                return name.replace(/[^a-zA-Z0-9]/g, '_');
+            }
+            
+            function updateCampsiteVisibility() {
+                campsiteRows.forEach(row => {
+                    const recArea = row.dataset.recArea;
+                    const campground = row.dataset.campground;
+                    const campsite = row.dataset.campsite;
+                    const amenities = window.campsiteData[recArea]?.available_sites[campground]?.campsites[campsite]?.amenities || {};
+                    const filters = window.filtersByArea[recArea] || { boolean: {}, keyword: '' };
+                    
+                    // Check if any amenities match the keyword search
+                    const matchesKeyword = filters.keyword === '' || 
+                        Object.entries(amenities).some(([name, value]) => {
+                            const searchTerm = filters.keyword.toLowerCase();
+                            return name.toLowerCase().includes(searchTerm) || 
+                                   String(value).toLowerCase().includes(searchTerm);
+                        });
+                    
+                    // Check if all selected boolean filters match
+                    const matchesFilters = Object.entries(filters.boolean).every(([filterName, isChecked]) => {
+                        if (!isChecked) return true;
+                        // Check if the amenity exists and has a truthy value
+                        return Object.entries(amenities).some(([name, value]) => {
+                            if (name === filterName) {
+                                const strValue = String(value).toLowerCase();
+                                return ['y', 'yes', 'true', '1'].includes(strValue);
+                            }
+                            return false;
+                        });
+                    });
+                    
+                    row.style.display = (matchesKeyword && matchesFilters) ? '' : 'none';
+                });
+                
+                updateAmenityCounts();
+                updateTotalCounts();
+            }
+
+            function updateAmenityCounts() {
+                // Reset all counts to 0
+                document.querySelectorAll('.amenity-count').forEach(badge => {
+                    badge.textContent = '0';
+                });
+                
+                // Count visible campsites for each amenity
+                const amenityCounts = {};
+                
+                campsiteRows.forEach(row => {
+                    const recArea = row.dataset.recArea;
+                    const campground = row.dataset.campground;
+                    const campsite = row.dataset.campsite;
+                    const amenities = window.campsiteData[recArea]?.available_sites[campground]?.campsites[campsite]?.amenities || {};
+                    
+                    // Count each amenity
+                    Object.entries(amenities).forEach(([name, value]) => {
+                        if (!window.ignoredFilters.includes(name)) {
+                            const key = `${recArea}-${sanitizeAmenityName(name)}`;
+                            amenityCounts[key] = (amenityCounts[key] || 0) + 1;
+                        }
+                    });                    
+                });
+                
+                // Update the count badges
+                Object.entries(amenityCounts).forEach(([key, count]) => {
+                    const badge = document.querySelector(`#amenity-${key} + label .amenity-count`);
+                    if (badge) {
+                        badge.textContent = count;
+                    }
+                });
+            }
+
+            // Add event listeners
+            amenityCheckboxes.forEach(cb => {
+                cb.addEventListener('change', function() {
+                    const recArea = this.dataset.recArea;
+                    const filterName = this.value;
+                    
+                    // Initialize filters for this recreation area if needed
+                    window.filtersByArea[recArea] = window.filtersByArea[recArea] || { boolean: {}, keyword: '' };
+                    
+                    // Update boolean filters
+                    if (this.checked) {
+                        window.filtersByArea[recArea].boolean[filterName] = true;
+                    } else {
+                        delete window.filtersByArea[recArea].boolean[filterName];
+                    }
+                    
+                    updateCampsiteVisibility();
+                });
+            });
+            
+            keywordSearches.forEach(search => {
+                search.addEventListener('input', updateCampsiteVisibility);
+            });
+
+            // Initialize counts and show all filters
+            updateAmenityCounts();
+
+            // Toggle All Campgrounds functionality
+            document.querySelectorAll('.toggle-rec-area').forEach(button => {
+                button.addEventListener('click', function() {
+                    const recArea = this.dataset.recArea;
+                    const campgroundDivs = document.querySelectorAll(`.campground[data-rec-area="${recArea}"]`);
+                    const allHidden = Array.from(campgroundDivs).every(div => {
+                        const rows = div.querySelectorAll('.campsite-row');
+                        return Array.from(rows).every(row => row.style.display === 'none');
+                    });
+                    
+                    campgroundDivs.forEach(div => {
+                        const rows = div.querySelectorAll('.campsite-row');
+                        rows.forEach(row => {
+                            row.style.display = allHidden ? '' : 'none';
+                        });
+                    });
+                    updateAmenityCounts();
+                });
+            });
+
+            // Toggle Sites for specific campground
+            document.querySelectorAll('.toggle-sites').forEach(button => {
+                button.addEventListener('click', function() {
+                    const campgroundId = this.dataset.campground;
+                    const [recArea, campground] = campgroundId.split('-', 2);
+                    const rows = document.querySelectorAll(`.campsite-row[data-rec-area="${recArea}"][data-campground="${campground}"]`);
+                    const allHidden = Array.from(rows).every(row => row.style.display === 'none');
+                    
+                    rows.forEach(row => {
+                        row.style.display = allHidden ? '' : 'none';
+                    });
+                    updateAmenityCounts();
+                });
+            });
+
+            // Show all amenity groups initially
+            document.querySelectorAll('.amenity-group').forEach(group => {
+                group.style.display = '';
+            });
+
+            // Keyword search functionality
+            keywordSearches.forEach(search => {
+                search.addEventListener('input', function() {
+                    const recArea = this.dataset.recArea;
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    // Update filters for this recreation area
+                    window.filtersByArea[recArea] = window.filtersByArea[recArea] || { boolean: {}, keyword: '' };
+                    window.filtersByArea[recArea].keyword = searchTerm;
+                    
+                    // Update visibility of boolean filters based on keyword match
+                    document.querySelectorAll(`.boolean-filter input[data-rec-area="${recArea}"]`).forEach(checkbox => {
+                        const filterName = checkbox.value;
+                        const filterGroup = checkbox.closest('.boolean-filter');
+                        
+                        if (searchTerm === '' || filterName.toLowerCase().includes(searchTerm)) {
+                            filterGroup.style.display = '';
+                        } else {
+                            filterGroup.style.display = 'none';
+                            // Uncheck hidden filters
+                            checkbox.checked = false;
+                            window.filtersByArea[recArea].boolean[sanitizeAmenityName(filterName)] = false;
+                        }
+                    });
+                    
+                    // Update visibility of campsites
+                    updateCampsiteVisibility();
+                });
+            });
+
+            function updateTotalCounts() {
+                document.querySelectorAll('.rec-area-card').forEach(card => {
+                    const recArea = card.id.replace('rec-area-', '');
+                    const totalSpan = card.querySelector('.total-sites');
+                    const filteredCountSpan = card.querySelector('#filtered-count');
+                    const filteredTotalSpan = card.querySelector('.filtered-total');
+                    
+                    // Count total visible rows
+                    const rows = card.querySelectorAll('.campsite-row');
+                    const totalRows = rows.length;
+                    const visibleRows = Array.from(rows).filter(row => row.style.display !== 'none').length;
+                    
+                    // Update total
+                    if (totalSpan) {
+                        totalSpan.textContent = totalRows;
+                    }
+                    
+                    // Update filtered count
+                    if (filteredCountSpan && filteredTotalSpan) {
+                        if (visibleRows < totalRows) {
+                            filteredCountSpan.style.display = '';
+                            filteredTotalSpan.textContent = visibleRows;
+                        } else {
+                            filteredCountSpan.style.display = 'none';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,43 @@
+# Example configuration file
+# Copy this file to config/config.yaml and update with your values
+
+# API Keys
+google_maps_api_key: "your-api-key-here"
+
+# Search Providers
+providers:
+  recreation_gov:
+    enabled: true
+    rate_limit: 1  # requests per second
+  reserve_california:
+    enabled: true
+    rate_limit: 1
+
+# Recreation Areas
+rec_areas:
+  lake_tahoe:
+    name: "Lake Tahoe Area"
+    providers:
+      - recreation_gov:
+          areas:
+            - id: "123456"
+              name: "D.L. Bliss State Park"
+            - id: "789012"
+              name: "Emerald Bay State Park"
+      - reserve_california:
+          areas:
+            - id: "345678"
+              name: "Sugar Pine Point State Park"
+
+# Report Settings
+reports:
+  output_dir: "output"
+  template_dir: "favorites/templates"
+  maps_enabled: true
+  default_zoom: 12
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/camply-custom.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
