@@ -106,4 +106,7 @@ The HTML reports include:
 - Interactive maps showing campground locations
 - Detailed availability information
 - Links to booking pages
-- Amenity information
+- Amenity 
+
+
+# I sometimes share my run results at https://camping.taylormadetraffic.com/index.html
