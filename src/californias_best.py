@@ -311,6 +311,12 @@ def main():
     parser.add_argument("--providers", nargs="+", choices=AVAILABLE_PROVIDERS,
                       help=f"Providers to search. Available: {', '.join(AVAILABLE_PROVIDERS)}. "
                            f"Default: {DEFAULT_PROVIDER}")
+    parser.add_argument("--equipment", choices=[e.name.lower() for e in EquipmentOptions], default="tent",
+                      help="Type of equipment (default: tent)")
+    parser.add_argument("--weekends-only", action="store_true", default=True,
+                      help="Only search for weekend availability (default: True)")
+    parser.add_argument("--nights", type=int, default=1,
+                      help="Minimum number of consecutive nights to search (default: 1)")
     args = parser.parse_args()
 
     # Use provided dates or defaults
@@ -339,9 +345,9 @@ def main():
                     searcher = search_class(
                         search_window=search_window,
                         recreation_area=rec_area_id,
-                        equipment=[EquipmentOptions.tent],  # Use enum value directly
-                        weekends_only=True,  # Search all days
-                        nights=1  # Minimum stay
+                        equipment=[getattr(EquipmentOptions, args.equipment.upper())],  # Convert CLI arg to enum
+                        weekends_only=args.weekends_only,
+                        nights=args.nights
                     )
                 except SystemExit:
                     logger.error(f"Failed to initialize searcher for {rec_area_name} (ID: {rec_area_id})")
@@ -400,7 +406,7 @@ def main():
     
     combined_filename = f"combined_{args.start_date}_to_{args.end_date}"
     
-    output_dir = Path("output")
+    output_dir = Path("logs")
     output_dir.mkdir(exist_ok=True)
     
     html_path = output_dir / f"{combined_filename}.html"
