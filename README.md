@@ -109,4 +109,4 @@ The HTML reports include:
 - Amenity 
 
 
-# I sometimes share my run results at https://camping.taylormadetraffic.com/index.html
+#### View some search results https://camping.taylormadetraffic.com/index.html
