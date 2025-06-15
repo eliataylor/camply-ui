@@ -1,0 +1,1351 @@
+{
+  "runtime": "2025-06-15T01:27:08",
+  "provider": {
+    "name": "ReserveCalifornia",
+    "id": "ReserveCalifornia"
+  },
+  "rec_area_name": "Hearst San Simeon SP",
+  "rec_area_id": "713",
+  "total_sites": 415,
+  "date_counts": {
+    "2025-07-12": 19,
+    "2025-07-18": 16,
+    "2025-09-06": 66,
+    "2025-07-11": 19,
+    "2025-08-16": 19,
+    "2025-09-05": 68,
+    "2025-07-04": 19,
+    "2025-07-05": 19,
+    "2025-08-09": 19,
+    "2025-06-28": 19,
+    "2025-08-15": 24,
+    "2025-06-20": 19,
+    "2025-08-08": 19,
+    "2025-06-21": 19,
+    "2025-06-27": 19,
+    "2025-08-02": 16,
+    "2025-07-19": 16
+  },
+  "available_sites": {
+    "Creek Tent Campground (sites 116-134)": {
+      "campground_id": "788",
+      "campground_name": "Creek Tent Campground (sites 116-134)",
+      "location": {
+        "latitude": 35.596581,
+        "longitude": -121.125556
+      },
+      "campsites": {
+        "Hike In Primitive Campsite #C121": {
+          "campsite_id": "49514",
+          "campsite_name": "Hike In Primitive Campsite #C121",
+          "dates": [
+            "2025-07-12",
+            "2025-07-04",
+            "2025-08-15",
+            "2025-08-09",
+            "2025-06-20",
+            "2025-07-18",
+            "2025-08-08",
+            "2025-09-05",
+            "2025-09-06",
+            "2025-07-19",
+            "2025-08-16",
+            "2025-08-02",
+            "2025-07-11",
+            "2025-06-27",
+            "2025-06-28",
+            "2025-06-21",
+            "2025-07-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C125": {
+          "campsite_id": "49529",
+          "campsite_name": "Tent Campsite #C125",
+          "dates": [
+            "2025-07-18",
+            "2025-08-16",
+            "2025-09-06",
+            "2025-06-28",
+            "2025-08-02",
+            "2025-07-05",
+            "2025-06-21",
+            "2025-06-20",
+            "2025-07-19",
+            "2025-08-09",
+            "2025-07-12",
+            "2025-08-15",
+            "2025-09-05",
+            "2025-06-27",
+            "2025-08-08",
+            "2025-07-11",
+            "2025-07-04"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C122": {
+          "campsite_id": "49532",
+          "campsite_name": "Tent Campsite #C122",
+          "dates": [
+            "2025-09-06",
+            "2025-06-28",
+            "2025-06-20",
+            "2025-07-11",
+            "2025-06-27",
+            "2025-07-05",
+            "2025-08-16",
+            "2025-09-05",
+            "2025-07-12",
+            "2025-06-21",
+            "2025-07-19",
+            "2025-07-04",
+            "2025-08-09",
+            "2025-08-02",
+            "2025-07-18",
+            "2025-08-15",
+            "2025-08-08"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C126": {
+          "campsite_id": "49528",
+          "campsite_name": "Tent Campsite #C126",
+          "dates": [
+            "2025-07-11",
+            "2025-06-28",
+            "2025-06-27",
+            "2025-09-06",
+            "2025-06-21",
+            "2025-07-19",
+            "2025-08-16",
+            "2025-08-08",
+            "2025-07-04",
+            "2025-08-02",
+            "2025-08-09",
+            "2025-06-20",
+            "2025-07-12",
+            "2025-07-05",
+            "2025-08-15",
+            "2025-07-18",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C131": {
+          "campsite_id": "49523",
+          "campsite_name": "Tent Campsite #C131",
+          "dates": [
+            "2025-07-18",
+            "2025-07-12",
+            "2025-07-11",
+            "2025-07-19",
+            "2025-08-16",
+            "2025-08-08",
+            "2025-06-28",
+            "2025-08-15",
+            "2025-07-04",
+            "2025-06-27",
+            "2025-08-09",
+            "2025-07-05",
+            "2025-06-21",
+            "2025-08-02",
+            "2025-09-06",
+            "2025-09-05",
+            "2025-06-20"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C132": {
+          "campsite_id": "49522",
+          "campsite_name": "Tent Campsite #C132",
+          "dates": [
+            "2025-07-05",
+            "2025-07-11",
+            "2025-09-06",
+            "2025-06-27",
+            "2025-07-18",
+            "2025-06-20",
+            "2025-08-16",
+            "2025-07-12",
+            "2025-09-05",
+            "2025-07-04",
+            "2025-07-19",
+            "2025-08-09",
+            "2025-08-08",
+            "2025-08-15",
+            "2025-06-21",
+            "2025-06-28",
+            "2025-08-02"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C127": {
+          "campsite_id": "49527",
+          "campsite_name": "Tent Campsite #C127",
+          "dates": [
+            "2025-07-18",
+            "2025-07-05",
+            "2025-08-16",
+            "2025-08-02",
+            "2025-06-28",
+            "2025-07-12",
+            "2025-08-15",
+            "2025-07-19",
+            "2025-09-05",
+            "2025-06-27",
+            "2025-08-09",
+            "2025-06-21",
+            "2025-07-04",
+            "2025-09-06",
+            "2025-08-08",
+            "2025-06-20",
+            "2025-07-11"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C117": {
+          "campsite_id": "49518",
+          "campsite_name": "Tent Campsite #C117",
+          "dates": [
+            "2025-08-09",
+            "2025-07-04",
+            "2025-08-16",
+            "2025-06-27",
+            "2025-07-11",
+            "2025-09-05",
+            "2025-07-05",
+            "2025-08-08",
+            "2025-06-21",
+            "2025-06-20",
+            "2025-08-15",
+            "2025-06-28",
+            "2025-07-12",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C119": {
+          "campsite_id": "49516",
+          "campsite_name": "Tent Campsite #C119",
+          "dates": [
+            "2025-08-15",
+            "2025-09-05",
+            "2025-08-08",
+            "2025-07-12",
+            "2025-06-28",
+            "2025-07-11",
+            "2025-07-04",
+            "2025-07-05",
+            "2025-06-27",
+            "2025-09-06",
+            "2025-08-09",
+            "2025-06-21",
+            "2025-08-16",
+            "2025-06-20"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C123": {
+          "campsite_id": "49531",
+          "campsite_name": "Tent Campsite #C123",
+          "dates": [
+            "2025-07-12",
+            "2025-07-11",
+            "2025-07-04",
+            "2025-09-05",
+            "2025-06-21",
+            "2025-07-18",
+            "2025-08-15",
+            "2025-09-06",
+            "2025-08-08",
+            "2025-06-27",
+            "2025-07-05",
+            "2025-06-28",
+            "2025-08-09",
+            "2025-07-19",
+            "2025-06-20",
+            "2025-08-16",
+            "2025-08-02"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C128": {
+          "campsite_id": "49526",
+          "campsite_name": "Tent Campsite #C128",
+          "dates": [
+            "2025-07-12",
+            "2025-08-09",
+            "2025-09-06",
+            "2025-06-20",
+            "2025-07-04",
+            "2025-07-11",
+            "2025-06-27",
+            "2025-09-05",
+            "2025-06-28",
+            "2025-07-18",
+            "2025-08-16",
+            "2025-08-08",
+            "2025-08-15",
+            "2025-07-19",
+            "2025-08-02",
+            "2025-06-21",
+            "2025-07-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C118": {
+          "campsite_id": "49517",
+          "campsite_name": "Tent Campsite #C118",
+          "dates": [
+            "2025-08-09",
+            "2025-07-05",
+            "2025-08-08",
+            "2025-07-18",
+            "2025-08-16",
+            "2025-07-12",
+            "2025-08-15",
+            "2025-08-02",
+            "2025-06-27",
+            "2025-07-04",
+            "2025-06-28",
+            "2025-06-20",
+            "2025-07-11",
+            "2025-09-06",
+            "2025-06-21",
+            "2025-09-05",
+            "2025-07-19"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C116": {
+          "campsite_id": "49519",
+          "campsite_name": "Tent Campsite #C116",
+          "dates": [
+            "2025-07-12",
+            "2025-07-05",
+            "2025-06-28",
+            "2025-08-16",
+            "2025-07-11",
+            "2025-07-04",
+            "2025-09-06",
+            "2025-08-09",
+            "2025-08-08",
+            "2025-06-20",
+            "2025-06-27",
+            "2025-08-15",
+            "2025-06-21",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C133": {
+          "campsite_id": "49521",
+          "campsite_name": "Tent Campsite #C133",
+          "dates": [
+            "2025-08-08",
+            "2025-08-15",
+            "2025-06-21",
+            "2025-07-05",
+            "2025-07-19",
+            "2025-06-28",
+            "2025-07-04",
+            "2025-09-06",
+            "2025-06-27",
+            "2025-07-18",
+            "2025-08-02",
+            "2025-09-05",
+            "2025-08-09",
+            "2025-06-20",
+            "2025-07-12",
+            "2025-08-16",
+            "2025-07-11"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C130": {
+          "campsite_id": "49524",
+          "campsite_name": "Tent Campsite #C130",
+          "dates": [
+            "2025-07-04",
+            "2025-06-21",
+            "2025-06-27",
+            "2025-06-28",
+            "2025-07-11",
+            "2025-07-12",
+            "2025-08-16",
+            "2025-09-06",
+            "2025-08-08",
+            "2025-07-18",
+            "2025-09-05",
+            "2025-08-15",
+            "2025-06-20",
+            "2025-07-19",
+            "2025-08-09",
+            "2025-07-05",
+            "2025-08-02"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Hike In Primitive Campsite #C120": {
+          "campsite_id": "49515",
+          "campsite_name": "Hike In Primitive Campsite #C120",
+          "dates": [
+            "2025-08-15",
+            "2025-06-20",
+            "2025-06-27",
+            "2025-07-18",
+            "2025-08-08",
+            "2025-07-11",
+            "2025-08-09",
+            "2025-09-06",
+            "2025-08-02",
+            "2025-09-05",
+            "2025-07-12",
+            "2025-07-19",
+            "2025-06-21",
+            "2025-06-28",
+            "2025-07-05",
+            "2025-07-04",
+            "2025-08-16"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C124": {
+          "campsite_id": "49530",
+          "campsite_name": "Tent Campsite #C124",
+          "dates": [
+            "2025-06-28",
+            "2025-07-12",
+            "2025-07-11",
+            "2025-08-15",
+            "2025-09-06",
+            "2025-08-09",
+            "2025-06-27",
+            "2025-07-18",
+            "2025-07-19",
+            "2025-06-21",
+            "2025-07-05",
+            "2025-09-05",
+            "2025-08-16",
+            "2025-06-20",
+            "2025-08-08",
+            "2025-07-04",
+            "2025-08-02"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C134": {
+          "campsite_id": "49520",
+          "campsite_name": "Tent Campsite #C134",
+          "dates": [
+            "2025-08-16",
+            "2025-06-21",
+            "2025-08-09",
+            "2025-06-20",
+            "2025-08-08",
+            "2025-06-28",
+            "2025-07-04",
+            "2025-06-27",
+            "2025-07-11",
+            "2025-09-06",
+            "2025-07-12",
+            "2025-08-02",
+            "2025-08-15",
+            "2025-09-05",
+            "2025-07-05",
+            "2025-07-19",
+            "2025-07-18"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        },
+        "Tent Campsite #C129": {
+          "campsite_id": "49525",
+          "campsite_name": "Tent Campsite #C129",
+          "dates": [
+            "2025-08-09",
+            "2025-06-20",
+            "2025-08-02",
+            "2025-08-08",
+            "2025-07-12",
+            "2025-07-11",
+            "2025-08-16",
+            "2025-06-28",
+            "2025-07-05",
+            "2025-07-18",
+            "2025-09-06",
+            "2025-06-27",
+            "2025-08-15",
+            "2025-09-05",
+            "2025-06-21",
+            "2025-07-04",
+            "2025-07-19"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/788",
+          "location": {
+            "latitude": 35.596581,
+            "longitude": -121.125556
+          },
+          "amenities": {}
+        }
+      }
+    },
+    "Washburn Campground (sites 201-268)": {
+      "campground_id": "787",
+      "campground_name": "Washburn Campground (sites 201-268)",
+      "location": {
+        "latitude": 35.59486,
+        "longitude": -121.11112
+      },
+      "campsites": {
+        "Primitive Campsite #W264": {
+          "campsite_id": "49639",
+          "campsite_name": "Primitive Campsite #W264",
+          "dates": [
+            "2025-09-05",
+            "2025-08-15",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W248": {
+          "campsite_id": "49599",
+          "campsite_name": "Primitive Campsite #W248",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W246": {
+          "campsite_id": "49598",
+          "campsite_name": "Primitive Campsite #W246",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W258": {
+          "campsite_id": "49577",
+          "campsite_name": "Primitive Campsite #W258",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W215": {
+          "campsite_id": "49587",
+          "campsite_name": "Primitive Campsite #W215",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W207": {
+          "campsite_id": "49626",
+          "campsite_name": "Primitive Campsite #W207",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W247": {
+          "campsite_id": "49619",
+          "campsite_name": "Primitive Campsite #W247",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W239": {
+          "campsite_id": "49584",
+          "campsite_name": "Primitive Campsite #W239",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W220": {
+          "campsite_id": "49607",
+          "campsite_name": "Primitive Campsite #W220",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W209": {
+          "campsite_id": "49608",
+          "campsite_name": "Primitive Campsite #W209",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W266": {
+          "campsite_id": "49624",
+          "campsite_name": "Primitive Campsite #W266",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W216": {
+          "campsite_id": "49611",
+          "campsite_name": "Primitive Campsite #W216",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W201": {
+          "campsite_id": "49578",
+          "campsite_name": "Primitive Campsite #W201",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W261": {
+          "campsite_id": "49618",
+          "campsite_name": "Primitive Campsite #W261",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W234": {
+          "campsite_id": "49586",
+          "campsite_name": "Primitive Campsite #W234",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W249": {
+          "campsite_id": "49640",
+          "campsite_name": "Primitive Campsite #W249",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W221": {
+          "campsite_id": "49614",
+          "campsite_name": "Primitive Campsite #W221",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W223": {
+          "campsite_id": "49632",
+          "campsite_name": "Primitive Campsite #W223",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W208": {
+          "campsite_id": "49610",
+          "campsite_name": "Primitive Campsite #W208",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W241": {
+          "campsite_id": "49620",
+          "campsite_name": "Primitive Campsite #W241",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W218": {
+          "campsite_id": "49604",
+          "campsite_name": "Primitive Campsite #W218",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W205": {
+          "campsite_id": "49588",
+          "campsite_name": "Primitive Campsite #W205",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W227": {
+          "campsite_id": "49643",
+          "campsite_name": "Primitive Campsite #W227",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W206": {
+          "campsite_id": "49582",
+          "campsite_name": "Primitive Campsite #W206",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W226": {
+          "campsite_id": "49601",
+          "campsite_name": "Primitive Campsite #W226",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W267": {
+          "campsite_id": "49576",
+          "campsite_name": "Primitive Campsite #W267",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W260": {
+          "campsite_id": "49579",
+          "campsite_name": "Primitive Campsite #W260",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W203": {
+          "campsite_id": "49589",
+          "campsite_name": "Primitive Campsite #W203",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W262": {
+          "campsite_id": "49636",
+          "campsite_name": "Primitive Campsite #W262",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W251": {
+          "campsite_id": "49580",
+          "campsite_name": "Primitive Campsite #W251",
+          "dates": [
+            "2025-08-15"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W250": {
+          "campsite_id": "49597",
+          "campsite_name": "Primitive Campsite #W250",
+          "dates": [
+            "2025-08-15"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W230": {
+          "campsite_id": "49591",
+          "campsite_name": "Primitive Campsite #W230",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W213": {
+          "campsite_id": "49615",
+          "campsite_name": "Primitive Campsite #W213",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W256": {
+          "campsite_id": "49592",
+          "campsite_name": "Primitive Campsite #W256",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W204": {
+          "campsite_id": "49622",
+          "campsite_name": "Primitive Campsite #W204",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W263": {
+          "campsite_id": "49605",
+          "campsite_name": "Primitive Campsite #W263",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W259": {
+          "campsite_id": "49596",
+          "campsite_name": "Primitive Campsite #W259",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W219": {
+          "campsite_id": "49633",
+          "campsite_name": "Primitive Campsite #W219",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W211": {
+          "campsite_id": "49616",
+          "campsite_name": "Primitive Campsite #W211",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W232": {
+          "campsite_id": "49625",
+          "campsite_name": "Primitive Campsite #W232",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W228": {
+          "campsite_id": "49642",
+          "campsite_name": "Primitive Campsite #W228",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W225": {
+          "campsite_id": "49638",
+          "campsite_name": "Primitive Campsite #W225",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W243": {
+          "campsite_id": "49602",
+          "campsite_name": "Primitive Campsite #W243",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W210": {
+          "campsite_id": "49617",
+          "campsite_name": "Primitive Campsite #W210",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W202": {
+          "campsite_id": "49623",
+          "campsite_name": "Primitive Campsite #W202",
+          "dates": [
+            "2025-08-15"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W268": {
+          "campsite_id": "49595",
+          "campsite_name": "Primitive Campsite #W268",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W244": {
+          "campsite_id": "49590",
+          "campsite_name": "Primitive Campsite #W244",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W212": {
+          "campsite_id": "49612",
+          "campsite_name": "Primitive Campsite #W212",
+          "dates": [
+            "2025-09-06",
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W254": {
+          "campsite_id": "49593",
+          "campsite_name": "Primitive Campsite #W254",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        },
+        "Primitive Campsite #W265": {
+          "campsite_id": "49635",
+          "campsite_name": "Primitive Campsite #W265",
+          "dates": [
+            "2025-09-05",
+            "2025-09-06"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/787",
+          "location": {
+            "latitude": 35.59486,
+            "longitude": -121.11112
+          },
+          "amenities": {}
+        }
+      }
+    },
+    "Creek Campground Lower Section (sites 36-115)": {
+      "campground_id": "687",
+      "campground_name": "Creek Campground Lower Section (sites 36-115)",
+      "location": {
+        "latitude": 35.59713,
+        "longitude": -121.124702
+      },
+      "campsites": {
+        "Campsite #C38": {
+          "campsite_id": "45213",
+          "campsite_name": "Campsite #C38",
+          "dates": [
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/687",
+          "location": {
+            "latitude": 35.59713,
+            "longitude": -121.124702
+          },
+          "amenities": {}
+        },
+        "Campsite #C80": {
+          "campsite_id": "49484",
+          "campsite_name": "Campsite #C80",
+          "dates": [
+            "2025-08-15"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/687",
+          "location": {
+            "latitude": 35.59713,
+            "longitude": -121.124702
+          },
+          "amenities": {}
+        }
+      }
+    },
+    "Creek Campground Upper Section (sites 1-35)": {
+      "campground_id": "789",
+      "campground_name": "Creek Campground Upper Section (sites 1-35)",
+      "location": {
+        "latitude": 35.599058,
+        "longitude": -121.122464
+      },
+      "campsites": {
+        "Campsite #C35": {
+          "campsite_id": "49554",
+          "campsite_name": "Campsite #C35",
+          "dates": [
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/713/789",
+          "location": {
+            "latitude": 35.599058,
+            "longitude": -121.122464
+          },
+          "amenities": {}
+        }
+      }
+    }
+  },
+  "all_amenities": {}
+}

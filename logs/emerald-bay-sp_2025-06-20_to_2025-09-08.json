@@ -1,0 +1,39 @@
+{
+  "runtime": "2025-06-15T01:27:35",
+  "provider": {
+    "name": "ReserveCalifornia",
+    "id": "ReserveCalifornia"
+  },
+  "rec_area_name": "Emerald Bay SP",
+  "rec_area_id": "641",
+  "total_sites": 1,
+  "date_counts": {
+    "2025-06-21": 1
+  },
+  "available_sites": {
+    "Boat-In Camp Area": {
+      "campground_id": "469",
+      "campground_name": "Boat-In Camp Area",
+      "location": {
+        "latitude": 38.9598888069999,
+        "longitude": -120.096555255
+      },
+      "campsites": {
+        "Boat In Primitive Campsite #B018": {
+          "campsite_id": "40837",
+          "campsite_name": "Boat In Primitive Campsite #B018",
+          "dates": [
+            "2025-06-21"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/641/469",
+          "location": {
+            "latitude": 38.9598888069999,
+            "longitude": -120.096555255
+          },
+          "amenities": {}
+        }
+      }
+    }
+  },
+  "all_amenities": {}
+}

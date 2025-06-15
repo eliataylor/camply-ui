@@ -1,0 +1,67 @@
+{
+  "runtime": "2025-06-15T01:27:11",
+  "provider": {
+    "name": "ReserveCalifornia",
+    "id": "ReserveCalifornia"
+  },
+  "rec_area_name": "Tahoe SRA, Tahoe City, CA",
+  "rec_area_id": "728",
+  "total_sites": 15,
+  "date_counts": {
+    "2025-07-18": 1,
+    "2025-06-27": 1,
+    "2025-08-02": 1,
+    "2025-08-09": 1,
+    "2025-06-21": 1,
+    "2025-07-11": 1,
+    "2025-07-05": 1,
+    "2025-07-12": 1,
+    "2025-07-19": 1,
+    "2025-08-08": 1,
+    "2025-06-28": 1,
+    "2025-07-04": 1,
+    "2025-08-16": 1,
+    "2025-06-20": 1,
+    "2025-08-15": 1
+  },
+  "available_sites": {
+    "Tahoe Campground": {
+      "campground_id": "738",
+      "campground_name": "Tahoe Campground",
+      "location": {
+        "latitude": 39.17527778,
+        "longitude": -120.1338889
+      },
+      "campsites": {
+        "Bike In Campsite #5": {
+          "campsite_id": "53506",
+          "campsite_name": "Bike In Campsite #5",
+          "dates": [
+            "2025-07-18",
+            "2025-06-27",
+            "2025-08-02",
+            "2025-08-09",
+            "2025-06-21",
+            "2025-07-11",
+            "2025-07-05",
+            "2025-07-12",
+            "2025-07-19",
+            "2025-08-08",
+            "2025-06-28",
+            "2025-07-04",
+            "2025-08-16",
+            "2025-06-20",
+            "2025-08-15"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/728/738",
+          "location": {
+            "latitude": 39.17527778,
+            "longitude": -120.1338889
+          },
+          "amenities": {}
+        }
+      }
+    }
+  },
+  "all_amenities": {}
+}

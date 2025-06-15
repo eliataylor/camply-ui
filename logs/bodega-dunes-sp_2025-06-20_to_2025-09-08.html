@@ -1,0 +1,468 @@
+<!-- Report regenerated at: 2025-06-15T01:28:41 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campsite Availability Report</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .date-badge {
+            margin: 2px;
+            font-size: 0.9em;
+        }
+        .campsite-card {
+            margin-bottom: 10px;
+        }
+        .first-available {
+            font-weight: bold;
+            color: #198754;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .select2-container {
+            min-width: 300px;
+        }
+        .collapse-controls {
+            margin-bottom: 1rem;
+        }
+        .rec-area-card {
+            scroll-margin-top: 80px;
+        }
+        .map-thumbnail {
+            cursor: pointer;
+        }
+        .modal-map {
+            width: 100%;
+        }
+        .amenity-filters {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .amenity-group {
+            margin-bottom: 10px;
+        }
+        .hidden-campsite {
+            display: none;
+        }
+        .provider-badge {
+            font-size: 0.8em;
+            padding: 0.3em 0.6em;
+            margin-left: 0.5em;
+        }
+        .provider-filter {
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Embed full data structure -->
+    <script type="text/javascript">
+        window.campsiteData = JSON.parse('[{"all_amenities": {}, "available_sites": {"Bodega Dunes": {"campground_id": "2061", "campground_name": "Bodega Dunes", "campsites": {"Campsite #BD11": {"amenities": {}, "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/718/2061", "campsite_id": "53420", "campsite_name": "Campsite #BD11", "dates": ["2025-09-05"], "location": {"latitude": 38.341865, "longitude": -123.055032}}}, "location": {"latitude": 38.341865, "longitude": -123.055032}}}, "date_counts": {"2025-09-05": 1}, "provider": {"id": "ReserveCalifornia", "name": "ReserveCalifornia"}, "rec_area_id": "718", "rec_area_name": "Bodega Dunes SP", "runtime": "2025-06-15T01:28:19", "total_sites": 1}]');
+        window.ignoredFilters = ['Map X Coordinate', 'Map Y Coordinate', 'Flood Locker', 'Min Num of People', 'Max Num of People', 'Min Num of Vehicles', 'Max Num of Vehicles', 'Max Vehicle Length', 'Driveway Length', 'Driveway Entry', 'Driveway Surface', 'Site Width', 'Site Length',  'Checkin Time', 'Checkout Time', 'Placed on Map' ];
+    </script>
+
+    <!-- Navigation App Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-nav mb-4">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex align-items-center">
+                    <select class="form-select me-2" id="locationJump">
+                        <option value="">Jump to location...</option>
+                        
+                        <optgroup label="Bodega Dunes SP (ReserveCalifornia)">
+                            <option value="rec-area-ReserveCalifornia-718">
+                                Bodega Dunes SP (Overview)
+                            </option>
+                            
+                            <option value="campground-ReserveCalifornia-718-2061">
+                                &nbsp;&nbsp;📍 Bodega Dunes
+                            </option>
+                            
+                        </optgroup>
+                        
+                    </select>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="provider-filters me-3">
+                        
+                        
+                            
+                        
+                        
+                        <div class="form-check form-check-inline provider-filter">
+                            <input class="form-check-input provider-checkbox" 
+                                   type="checkbox" 
+                                   value="ReserveCalifornia" 
+                                   id="provider-ReserveCalifornia" 
+                                   checked>
+                            <label class="form-check-label text-white" for="provider-ReserveCalifornia">
+                                ReserveCalifornia
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <span class="navbar-text">
+                        2025-09-05 to 2025-09-05
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        
+        <div class="card mb-4 rec-area-card" 
+             id="rec-area-ReserveCalifornia-718"
+             data-provider="ReserveCalifornia"
+             data-rec-area-id="718">
+            <div class="card-header bg-primary text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <h3 class="mb-0">Bodega Dunes SP</h3>
+                        <span class="badge bg-info provider-badge">ReserveCalifornia</span>
+                    </div>
+                    <p>Total Available Sites: <span class="total-sites">1</span> 
+                       <small class="text-muted" id="filtered-count" style="display: none">(Filtered: <span class="filtered-total">0</span>)</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="rec-area mb-4" 
+                     id="rec-area-content-ReserveCalifornia-718">
+                    <h2>Bodega Dunes SP</h2>
+
+                    <!-- Date summary section -->
+                    <div class="mb-4">
+                        <h4>Availability by Date</h4>
+                        <div class="date-summary">
+                            
+                            <span class="badge bg-success date-badge">
+                                2025-09-05: <small>1 sites</small>
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!-- Amenity filters -->
+                    <div class="amenity-filters">
+                        <h4>Filter by Amenities</h4>
+                        
+                        <!-- Keyword Search -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="keyword-search-ReserveCalifornia-718">Search Amenities</label>
+                                    <input type="text" 
+                                           class="form-control amenity-keyword-search" 
+                                           id="keyword-search-ReserveCalifornia-718"
+                                           data-provider="ReserveCalifornia"
+                                           data-rec-area-id="718"
+                                           placeholder="Search by amenity description...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boolean Filters -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h5>Quick Filters</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Rec Area Collapse Controls -->
+                    <div class="collapse-controls mb-3">
+                        <button class="btn btn-outline-primary btn-sm toggle-rec-area" 
+                                data-provider="ReserveCalifornia"
+                                data-rec-area-id="718">
+                            Toggle All Campgrounds
+                        </button>
+                    </div>
+
+                    <!-- Campgrounds -->
+                    
+                    <div class="campground mb-4" 
+                         id="campground-ReserveCalifornia-718-2061"
+                         data-provider="ReserveCalifornia"
+                         data-rec-area-id="718"
+                         data-campground-id="2061">
+                        
+                        <div class="campground-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                                <div class="ml-2">
+                                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=38.341865,-123.055032&zoom=14&size=120x60&maptype=hybrid&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                         class="map-thumbnail"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#mapModal-ReserveCalifornia-718-2061"
+                                         alt="Campground map">
+                                </div>
+                                
+                                <!-- Campground Map Modal -->
+                                <div class="modal fade" id="mapModal-ReserveCalifornia-718-2061" tabindex="-1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Bodega Dunes Location</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Broader area view -->
+                                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=38.341865,-123.055032&zoom=14&size=800x400&maptype=roadmap&markers=color:red%7C38.341865,-123.055032&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                                     class="modal-map mb-3"
+                                                     alt="Campground location (broader area)">
+                                                <!-- Detailed satellite view -->
+                                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=38.341865,-123.055032&zoom=16&size=800x400&maptype=hybrid&markers=color:red%7C38.341865,-123.055032&key=AIzaSyDyYD9XpTTwDhy4NhYVaCj6IPeS39W30s0"
+                                                     class="modal-map"
+                                                     alt="Campground location (detailed view)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <h3>Bodega Dunes</h3>
+                                <div class="campground-controls">
+                                    <button class="btn btn-outline-secondary btn-sm toggle-sites" 
+                                            data-provider="ReserveCalifornia"
+                                            data-rec-area-id="718"
+                                            data-campground-id="2061">
+                                        Toggle All Sites
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Campsites -->
+                        <div class="campsites">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Campsite <small>(1 sites)</small></th>
+                                        <th>Available Dates</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr class="campsite-row" 
+                                        data-amenities='{}' 
+                                        data-provider="ReserveCalifornia"
+                                        data-rec-area-id="718"
+                                        data-campground-id="2061"
+                                        data-campsite-id="53420">
+                                        <td>
+                                            Campsite #BD11
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            <span class="badge bg-info date-badge">2025-09-05</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="https://www.reservecalifornia.com/Web/Default.aspx#!park/718/2061" target="_blank" class="btn btn-success btn-sm">Book Now</a>
+                                                
+                                                <a href="https://www.google.com/maps?q=38.341865,-123.055032" 
+                                                   target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Update all selectors in JavaScript to use provider and ID based selectors
+            $('#locationJump').select2({
+                theme: 'bootstrap-5',
+                placeholder: 'Jump to location...',
+                allowClear: true
+            }).on('change', function() {
+                const targetId = $(this).val();
+                if (targetId) {
+                    const element = document.getElementById(targetId);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+
+            // Update provider filtering
+            $('.provider-checkbox').change(function() {
+                const providerId = $(this).val();
+                const isChecked = $(this).prop('checked');
+                
+                $(`.rec-area-card[data-provider="${providerId}"]`).each(function() {
+                    if (isChecked) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+                
+                updateTotalCounts();
+            });
+
+            // Update amenity filtering
+            $('.amenity-checkbox').change(function() {
+                const providerId = $(this).data('provider');
+                const recAreaId = $(this).data('rec-area-id');
+                const filterName = $(this).val();
+                
+                updateCampsiteVisibility(providerId, recAreaId);
+            });
+
+            // Update keyword search
+            $('.amenity-keyword-search').on('input', function() {
+                const providerId = $(this).data('provider');
+                const recAreaId = $(this).data('rec-area-id');
+                
+                updateCampsiteVisibility(providerId, recAreaId);
+            });
+
+            // Update toggle functions
+            $('.toggle-rec-area').click(function() {
+                const providerId = $(this).data('provider');
+                const recAreaId = $(this).data('rec-area-id');
+                const campgrounds = $(`.campground[data-provider="${providerId}"][data-rec-area-id="${recAreaId}"]`);
+                
+                const allHidden = campgrounds.find('.campsite-row:visible').length === 0;
+                campgrounds.find('.campsite-row').toggle(allHidden);
+                
+                updateTotalCounts();
+            });
+
+            $('.toggle-sites').click(function() {
+                const providerId = $(this).data('provider');
+                const recAreaId = $(this).data('rec-area-id');
+                const campgroundId = $(this).data('campground-id');
+                
+                const selector = `.campsite-row[data-provider="${providerId}"][data-rec-area-id="${recAreaId}"][data-campground-id="${campgroundId}"]`;
+                const rows = $(selector);
+                const allHidden = rows.filter(':visible').length === 0;
+                
+                rows.toggle(allHidden);
+                updateTotalCounts();
+            });
+
+            function updateCampsiteVisibility(providerId, recAreaId) {
+                const rows = $(`.campsite-row[data-provider="${providerId}"][data-rec-area-id="${recAreaId}"]`);
+                const filters = getActiveFilters(providerId, recAreaId);
+                
+                rows.each(function() {
+                    const amenities = JSON.parse($(this).attr('data-amenities'));
+                    const visible = matchesFilters(amenities, filters);
+                    $(this).toggle(visible);
+                });
+                
+                updateTotalCounts();
+            }
+
+            function getActiveFilters(providerId, recAreaId) {
+                const filters = { boolean: {}, keyword: '' };
+                const campgrounds = $(`.campground[data-provider="${providerId}"][data-rec-area-id="${recAreaId}"]`);
+                campgrounds.each(function() {
+                    const amenities = JSON.parse($(this).attr('data-amenities'));
+                    Object.entries(amenities).forEach(([name, value]) => {
+                        if (!window.ignoredFilters.includes(name)) {
+                            filters.boolean[name] = true;
+                        }
+                    });
+                });
+                return filters;
+            }
+
+            function matchesFilters(amenities, filters) {
+                const keyword = filters.keyword.toLowerCase();
+                const matchesKeyword = Object.entries(amenities).some(([name, value]) => {
+                    return name.toLowerCase().includes(keyword) || String(value).toLowerCase().includes(keyword);
+                });
+                const matchesFilters = Object.entries(filters.boolean).every(([filterName, isChecked]) => {
+                    if (!isChecked) return true;
+                    return Object.entries(amenities).some(([name, value]) => {
+                        if (name === filterName) {
+                            const strValue = String(value).toLowerCase();
+                            return ['y', 'yes', 'true', '1'].includes(strValue);
+                        }
+                        return false;
+                    });
+                });
+                return matchesKeyword && matchesFilters;
+            }
+
+            function updateTotalCounts() {
+                document.querySelectorAll('.rec-area-card').forEach(card => {
+                    const recAreaId = card.id.split('-').pop();
+                    const totalSpan = card.querySelector('.total-sites');
+                    const filteredCountSpan = card.querySelector('#filtered-count');
+                    const filteredTotalSpan = card.querySelector('.filtered-total');
+                    
+                    // Count total visible rows
+                    const rows = card.querySelectorAll('.campsite-row');
+                    const totalRows = rows.length;
+                    const visibleRows = Array.from(rows).filter(row => row.style.display !== 'none').length;
+                    
+                    // Update total
+                    if (totalSpan) {
+                        totalSpan.textContent = totalRows;
+                    }
+                    
+                    // Update filtered count
+                    if (filteredCountSpan && filteredTotalSpan) {
+                        if (visibleRows < totalRows) {
+                            filteredCountSpan.style.display = '';
+                            filteredTotalSpan.textContent = visibleRows;
+                        } else {
+                            filteredCountSpan.style.display = 'none';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

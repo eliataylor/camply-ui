@@ -1,0 +1,39 @@
+{
+  "runtime": "2025-06-15T01:28:19",
+  "provider": {
+    "name": "ReserveCalifornia",
+    "id": "ReserveCalifornia"
+  },
+  "rec_area_name": "Bodega Dunes SP",
+  "rec_area_id": "718",
+  "total_sites": 1,
+  "date_counts": {
+    "2025-09-05": 1
+  },
+  "available_sites": {
+    "Bodega Dunes": {
+      "campground_id": "2061",
+      "campground_name": "Bodega Dunes",
+      "location": {
+        "latitude": 38.341865,
+        "longitude": -123.055032
+      },
+      "campsites": {
+        "Campsite #BD11": {
+          "campsite_id": "53420",
+          "campsite_name": "Campsite #BD11",
+          "dates": [
+            "2025-09-05"
+          ],
+          "booking_url": "https://www.reservecalifornia.com/Web/Default.aspx#!park/718/2061",
+          "location": {
+            "latitude": 38.341865,
+            "longitude": -123.055032
+          },
+          "amenities": {}
+        }
+      }
+    }
+  },
+  "all_amenities": {}
+}
