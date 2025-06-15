@@ -1,0 +1,178 @@
+# Camply configuration for weekend camping alerts
+# Run with: camply campsites --yaml-config top-rec-areas.yaml
+
+# Search parameters
+campgrounds:
+  # Shasta-Trinity National Forest (1073)
+  - 233346  # Ackerman Campground
+  - 233345  # Alpine View Campground
+  - 232753  # Antlers (Shasta Lake)
+  - 232760  # Bailey Cove
+  - 232363  # Bushytail
+  - 233256  # Camp 4 Group Campground
+  - 273379  # Cooper Gulch Campground
+  - 232754  # Dekkas Rock
+  - 273376  # East Weaver Group Campground
+  - 232761  # Ellery Creek
+  - 232361  # Fawn
+  - 234405  # Forest Glen Guard Station
+  - 255119  # Fowlers Campground
+  - 234403  # Girard Ridge Lookout
+  - 273375  # Gregory Creek Group Campground
+  - 238331  # Hayden Flat Group Campground
+  - 232234  # Hayward Flat
+  - 232762  # Hirz Bay
+  - 233096  # Hirz Bay Group 1
+  - 233097  # Hirz Bay Group 2
+  - 273378  # Hirz Cabin
+  - 234369  # Hirz Mountain Lookout
+  - 232758  # Lakeshore East
+  - 234436  # Little Mt. Hoffman Lookout
+  - 273755  # Mariners Point Group Campground
+  - 233344  # Mary Smith Campground
+  - 10145702  # McCloud Bridge
+  - 233347  # Minersville Campground
+  - 232763  # Moore Creek
+  - 232764  # Nelson Point
+  - 232765  # Pine Point
+  - 234404  # Post Creek Guard Station
+  - 251582  # Red Fir Flat Group Campground
+  - 232362  # Stoney Group Shasta-Trinity
+  - 232235  # Tannery
+  - 10315018  # Ahdina Campground
+  - 10157490  # Beehive Dispersed Area
+  - 10157533  # Bridge Camp
+  - 10315038  # Cattle Camp Campground
+  - 10157211  # Eagle Creek
+  - 10157230  # Gregory Beach Dispersed Area
+  - 10157273  # Jones Valley Inlet Dispersed Area
+  - 10157316  # Jones Valley Inlet West Dispersed Area
+  - 10157359  # Lower Jones Valley
+  - 10315058  # McBride Springs Campground
+  - 238333  # Pigeon Point Group Campground
+  - 10157382  # Preacher Meadow
+  - 10157438  # Salt Creek Dispersed Area
+  - 10315073  # Sims Flat Campground
+  - 10010172  # Skunk Point Group Campground
+  - 10157481  # Trinity River
+
+  # Tahoe National Forest (1077)
+  - 10040012  # Hornswoggle Group Campground
+  - 10039838  # Ahart Campground
+  - 234536  # Berger
+  - 234589  # Big Bend Group (Yuba River)
+  - 10300375  # Big Reservoir Campground
+  - 234114  # Boca Campground
+  - 234115  # Boca Rest Campground
+  - 234116  # Boca Spring
+  - 234113  # Boyington Mill
+  - 234538  # Cal-Ida
+  - 234131  # Calpine Lookout
+  - 234547  # Carlton
+  - 234546  # Chapman
+  - 232869  # Cold Creek
+  - 10137699  # Cottage Creek Campground
+  - 232871  # Cottonwood Creek
+  - 232032  # Coyote Group
+  - 10039887  # Dark Day Campground
+  - 234537  # Diablo
+  - 232767  # East Meadow Campground
+  - 232859  # Emigrant Group
+  - 234542  # Fiddle Creek
+  - 232757  # Findley Campground
+  - 232756  # Fir Top Campground
+  - 232045  # Forbes Creek
+  - 232047  # French Meadows
+  - 10039993  # Garden Point Boat-In Campground
+  - 232048  # Gates Group
+  - 232888  # Giant Gap
+  - 232755  # Goose Meadows
+  - 232883  # Granite Flat
+  - 232261  # Hampshire Rocks
+  - 234592  # Indian Springs
+  - 234548  # Indian Valley
+  - 234117  # Lakeside (Truckee)
+  - 233180  # Lewis
+  - 233130  # Little Lasier Meadows Campground
+  - 234541  # Loganville
+  - 232858  # Logger Campground
+  - 232907  # Lower Little Truckee
+  - 10040022  # Madrone Cove Boat-In Campground
+  - 234587  # North Fork
+  - 234535  # Packsaddle
+  - 232766  # Pass Creek Campground
+  - 234210  # Prosser Family
+  - 231977  # Prosser Ranch Group
+  - 234543  # Ramshorn
+  - 234549  # Rocky Rest
+  - 234540  # Salmon Creek
+  - 234539  # Sardine Lake
+  - 252037  # Sardine Peak Lookout
+  - 10040047  # Schoolhouse Campground
+  - 232887  # Shirttail Creek
+  - 234545  # Sierra
+  - 232884  # Silver Creek-Truckee
+  - 234591  # Skillman
+  - 232264  # Tunnel Mills II
+  - 234534  # Union Flat
+  - 232908  # Upper Little Truckee
+  - 232321  # White Cloud
+  - 234544  # Wild Plum
+  - 232759  # Woodcamp Campground
+  - 232371  # Yuba Pass Campground
+
+  # Yosemite National Park (2991)
+  - 232453  # Bridalveil Creek Campground
+  - 10004152  # Camp 4
+  - 232452  # Crane Flat Campground
+  - 232451  # Hodgdon Meadow Campground
+  - 232450  # Lower Pines Campground
+  - 232449  # North Pines Campground
+  - 232448  # Tuolumne Meadows Campground
+  - 232447  # Upper Pines Campground
+  - 232446  # Wawona Campground
+  - 10083567  # White Wolf Campground
+  - 10083840  # Yosemite Creek Campground
+  - 10083831  # Porcupine Flat Campground
+  - 10083845  # Tamarack Flat Campground
+  - 10220609  # Wawona Horse Campsites
+
+# Date range - next few days
+start_date: "2025-06-13"  # Tomorrow
+end_date: "2025-7-13"    # Weekend period
+
+# Weekend nights only (Friday, Saturday, Sunday)
+search_settings:
+  search_days:
+  - Friday
+  - Saturday
+  equipment:
+  - tent
+
+# Minimum 1 night stay
+nights: 1
+
+# Notification settings
+# notifications:
+#  - service: pushover
+#    push_to_all_devices: true
+  # Add other notification services as needed:
+  # - service: email
+  # - service: slack
+  # - service: telegram
+
+# Search frequency (check every 5 minutes)
+search-forever: true
+search-once: false
+delay: 300  # 5 minutes in seconds
+
+# Polling settings
+polling-interval: 300  # 5 minutes
+continuous: true
+
+# Additional filters
+accessible-only: false  # Set to true if you need accessible sites only
+
+# Logging
+verbose: true
+debug: true

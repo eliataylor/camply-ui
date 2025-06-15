@@ -1,0 +1,5 @@
+- chmod +x setup_env.sh
+- ./setup_env.sh
+- python src/californias_best.py --start-date 2025-06-20 --end-date 2025-09-08
+- python src/regenerate_reports.py 
+- pyhton src/generate_index.py

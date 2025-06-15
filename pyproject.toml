@@ -1,0 +1,24 @@
+# pyproject.toml
+[project]
+name = "camping-favorites"
+version = "0.1.0"
+description = "Custom scripts utilizing camply."
+authors = [{ name = "Eli Taylor", email = "eli@taylormadetraffic.com" }]
+requires-python = ">=3.12" 
+dependencies = [
+    "jinja2>=3.0.0",
+    "pandas>=2.0.0",
+    "beautifulsoup4>=4.9.0",
+    "pyyaml>=6.0.0",
+    "requests>=2.25.0",
+    "google-api-python-client>=2.0.0",
+    # Importantly, you'll still install camply via the -e flag as described in the previous answer.
+    # Its dependencies will be resolved when you 'pip install -e ./camply'
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
